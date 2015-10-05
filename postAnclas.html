@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Aprendiendo HTML - ¿Anclas? Como de barcos piratas</title>
+
+    <!-- Bootstrap Core CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom CSS -->
+    <link href="css/clean-blog.min.css" rel="stylesheet">
+
+    <!-- Custom Fonts -->
+    <link href="http://maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+    <link href='http://fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800' rel='stylesheet' type='text/css'>
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+</head>
+
+<body>
+
+    <!-- Navigation -->
+    <nav class="navbar navbar-default navbar-custom navbar-fixed-top">
+        <div class="container-fluid">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header page-scroll">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="index.html">Inicio</a>
+            </div>
+
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <ul class="nav navbar-nav navbar-right">
+                    <li>
+                        <a href="index.html">Inicio</a>
+                    </li>
+                    <li>
+                        <a href="about.html">Sobre mí</a>
+                    </li>
+                    <li>
+                        <a href="post.html">Publicación</a>
+                    </li>
+                    <li>
+                        <a href="contact.html">Contacto</a>
+                    </li>
+                </ul>
+            </div>
+            <!-- /.navbar-collapse -->
+        </div>
+        <!-- /.container -->
+    </nav>
+
+    <!-- Page Header -->
+    <!-- Set your background image for this header on the line below. -->
+    <a name="arriba"></a>
+    <header class="intro-header" style="background-image: url('img/post-bg.jpg')">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+                    <div class="post-heading">
+                        <h1>¿Anclas? Como de barcos piratas.</h1>
+                        <span class="meta">Publicado por <a href="about.html">Durley</a> el 06 de Septiembre, 2015</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Post Content -->
+    <article>
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+                    
+                    <h2 class="section-heading">Los Anclajes o Enlaces tipo Ancla</h2>
+
+                    <p>En ciertas ocasiones, hay páginas que poseen gran cantidad de contenido y se dificulta la navegación, pues hay que subir "manualmente" o bajar hasta cierta parte de la página, o hasta cierto título/subtítulo que haya en el contenido que estamos visualizando. Y es ahí donde las anclas entran en juego. Para explicarlo mejor, imaginemos la página de Wikipedia, aparece primero una definición de cierto tema, luego aparece un pequeño índice o tabla de contenido del tema que se desarrollará a continuación, y al hacer clic en cada ítem de ese índice, la ventana del navegador corre hacia esa parte en concentro, dentro de la misma página. </p>
+
+                    <p><dt>Ejemplos</dt></p>
+
+                    <dt>Para dirigirse al inicio de una página web</dt>
+
+                    <p>Código en HTML</p>
+
+                    <dd>Para el elemento que sobre el que se hará clic</dd>
+
+                    <blockquote>
+                        &lt;a href="#arriba" title="Ir arriba">Ir arriba&lt;/a></br>
+                    </blockquote>
+
+                    <dd>Para el lugar del documento a donde queremos ser dirigidos, en este caso, este código debe ir dentro de la etiqueta &lt;body>, antes del código de la imagen principal</dd>
+
+                    <blockquote>
+                    &lt;a name="arriba">&lt;/a>
+                    </blockquote>
+
+                    <p>En el navegador al hacer clic en "Ir arriba", me llevará al inicio de esta página</p>
+
+                    <blockquote>
+                        <a href="#arriba" title="Ir arriba">Ir arriba</a></br>
+                    </blockquote>
+
+                    <a href="#">
+                        <img class="img-responsive" src="img/postAnclas-image.jpg" alt="">
+                    </a>
+                    <span class="caption text-muted">¿Así de sencillo? Tomado de google.com</span>
+                </div>
+            </div>
+        </div>
+    </article>
+
+    <hr>
+
+</html>
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+                    <ul class="list-inline text-center">
+                        <li>
+                            <a target="_blank" href="https://twitter.com/Durley_AdvA">
+                                <span class="fa-stack fa-lg">
+                                    <i class="fa fa-circle fa-stack-2x"></i>
+                                    <i class="fa fa-twitter fa-stack-1x fa-inverse"></i>
+                                </span>
+                            </a>
+                        </li>
+                        <li>
+                            <a target="_blank" href="http://bitbucket.org/Durley">
+                                <span class="fa-stack fa-lg">
+                                    <i class="fa fa-circle fa-stack-2x"></i>
+                                    <i class="fa fa-bitbucket fa-stack-1x fa-inverse"></i>
+                                </span>
+                            </a>
+                        </li>
+                        <li>
+                            <a target="_blank" href="https://co.linkedin.com/pub/angie-durley-valera-alarcon/83/82b/5a4">
+                                <span class="fa-stack fa-lg">
+                                    <i class="fa fa-circle fa-stack-2x"></i>
+                                    <i class="fa fa-linkedin fa-stack-1x fa-inverse"></i>
+                                </span>
+                            </a>
+                        </li>
+                    </ul>
+                    <p class="copyright text-muted">Copyright &copy; Aprendiendo HTML 2015</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- jQuery -->
+    <script src="js/jquery.js"></script>
+
+    <!-- Bootstrap Core JavaScript -->
+    <script src="js/bootstrap.min.js"></script>
+
+    <!-- Custom Theme JavaScript -->
+    <script src="js/clean-blog.min.js"></script>
+
+</body>
+
+</html>
